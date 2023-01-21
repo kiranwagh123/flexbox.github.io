@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        #abc{
+
+            background-color: black;
+            height: 10vh;
+            padding: 1rem;
+            text-align: center;
+            font-size: 30px;
+            color: #fff;
+
+        }
+        #aside1{
+           background-color: lightskyblue;
+            /* background-color: rgb(57, 50, 53); */
+            width: 40%;
+            height: 90vh;
+            padding: 10px;
+            float: left;
+            text-align: center;
+            font-size: 30px;
+            color: #fff;
+            font-weight: bolder;
+
+        }
+        
+        #xyz{
+
+            background-color: rgb(208, 217, 211);
+            padding: 1rem;
+            height: 90vh;
+            text-align: center;
+            font-size: 30px;
+            border: 5px solid rgb(27, 25, 25);
+        }
+        .input1{
+            height: 5vh;
+            width: 30vw;
+            top: 300px;
+            /* position: relative; */
+            /* left: -200px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 15rem;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+        .btn1{
+            display: flex;
+            /* justify-content: center;
+            align-items: center; */
+            position: relative;
+            /* left: 22rem; */
+            margin-top: 1rem;
+            padding: 5px 20px;
+            border-radius: 6px;
+            transition: 0.9s;
+            background: rgb(188, 79, 79);
+            color: #fff;
+        }
+        .btn1:hover{
+            transform: scale(1);
+            background: green;
+            color: rgb(11, 11, 11);
+        }
+       
+        .img{
+            height: 150px;
+            width: 150px;
+            position: relative;
+            left: -300px;
+            top: 100px;
+            
+        }
+        .img-open{
+            
+            box-shadow: 10px 10px 20px red;
+            left: 55px;
+            border-radius: 50%;
+            transition: 0.9s;
+        }
+        #border{
+            position: relative;
+
+            border: 5px solid black;
+            border-radius: 10px;
+            height: 22vh;
+            width: 17vw;
+            left: 65%;
+            top: -60px;
+        }
+        .msg p{
+            position: absolute;
+            left: 20px;
+            margin-top: 350px;
+            font-size: 20px;
+            color: #fff;
+            letter-spacing: 3px;
+        }
+            
+          
+        
+
+    
+  
+ </style>
+
+
+</head>
+<body>
+   <div class="msg">
+    <p>display:flex</p>
+   
+
+   </div>
+    <header id="abc">Flex-Box Boll</header>
+
+    <section>
+        
+        <div id="aside1" class="containt1">
+      
+           <h2> Write Correct Code Here</h2>
+           <input class="input1" type="text" id="inputid" placeholder="justify-content:" required autocomplete="off">
+           <input onclick="showAns()" class="btn1" type="button" value="submit">
+       
+           
+        </div>
+            
+     
+    <div id="xyz" class="containt2">
+     <h2>Output</h2>
+     <img class="img" id="imgid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiMjZk2pgUVAgeHMvhPgdQALMsmgT4ObCYS6my8PQ&s">
+     <h4 id="border"></h4>
+     
+    </div>
+    </section>
+   
+       <!-- js start  -->
+
+       <script>
+
+        var  ans1 = "center"
+        
+        function showAns(){
+            var inputvalue = document.getElementById("inputid").value;
+            popup1 = document.getElementById("imgid")
+
+                if(inputvalue == ans1){
+
+                    popup1.classList.add("img-open");
+                }
+                // else if(inputvalue != ans1){
+                //     document.getElementById("span1");
+                // }
+
+            }
+       </script>
+    
+</body>
+</html>
